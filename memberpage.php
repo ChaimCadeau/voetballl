@@ -38,7 +38,7 @@ mysqli_close($con);
 <div class="black-box">
     <?php if(isset($user_name)) : ?>
         <h1>Welcome: <?php echo $user_name; ?></h1>
-        <p>Dit is de memberpage. <br> Vanaf deze pagina is het mogelijk gebruik te maken van de bestaande functionaliteiten.</p>
+        <p>Dit is the memberpage. <br> Vanaf deze pagina is het mogelijk gebruik te maken van de bestaande functionaliteiten.</p>
     <?php endif; ?>
 
     <a href="staf.php" class="box1-link">
