@@ -20,14 +20,14 @@
             <img src="images/222.jpg" alt="Image 1">
             <div class="caption">
                 <h3>Image 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consm adipiscing elit.</p>
             </div>
         </div>
         <div class="image">
             <img src="images/bak.jpg" alt="Image 2">
             <div class="caption">
                 <h3>Image 2</h3>
-                <p>Integer euismod justo et risus auctor, id aliquet lacus efficitur.</p>
+                <p>Integer welkom justo et risus aucfsadsaffator,fsafa id aliquet lacus efficitur.</p>
             </div>
         </div>
         <div class="image">
