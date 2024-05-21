@@ -26,6 +26,9 @@
     </div>
     <div class="days"></div>
 </div>
+<div class="beeld">
+    <img src="images/zomer.webp" alt="afbeelding">
+</div>
 <script src="script.js"></script>
 </body>
 </html>
