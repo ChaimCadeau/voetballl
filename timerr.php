@@ -7,7 +7,7 @@
     <?php include('header.php'); ?>
 </head>
 <body
-        class="timer-page">
+    class="timer-page">
 <div class="container">
     <div class="timer">
         <h2>Timer</h2>
