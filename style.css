@@ -817,30 +817,69 @@ body{
 
 /--------------------------contact-----------------------/
 
-.contact-box{
-    width: 500px;
+.contact.php, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.custom-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(1, 0, 1, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+.custom-left-panel {
+    background-color: #27546c;
+    color: #007bff;
+    padding: 40px;
+    width: 40%;
+}
+
+.custom-left-panel h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.custom-left-panel p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.custom-right-panel {
+    padding: 40px;
+    width: 70%;
+}
+
+.custom-form-group {
+    margin-bottom: 20px;
+}
+
+.custom-form-group input,
+.custom-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.custom-form-group input[type="submit"] {
+    background-color: #2F2F2F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-form-group input[type="submit"]:hover {
     background-color: #007bff;
-    box-shadow: 0 0 20px 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
 }
-
-form{
-    margin: 35px;
-}
-
-.input-field{
-    width: 400px;
-    height: 40px;
-    margin-top: 20px;
-    padding-left: 10px;
-    border: 1px solid #007bff;
-}
-
-
-
 
 
 

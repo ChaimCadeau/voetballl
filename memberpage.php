@@ -38,7 +38,8 @@ mysqli_close($con);
 <div class="black-box">
     <?php if(isset($user_name)) : ?>
         <h1>Welcome: <?php echo $user_name; ?></h1>
-        <p>Dit is the memberpage. <br> Vanaf deze pagina is het mogelijk gebruik te maken van de bestaande functionaliteiten.</p>
+        <p>Here is the member page. <br>
+            From this page, it is possible to utilize the existing functionalities.</p>
     <?php endif; ?>
 
     <body class="member-page">
