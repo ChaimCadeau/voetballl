@@ -41,7 +41,7 @@ function pad(num) {
 
 
 
-
+//-----------------------calender-------------------//
 
 
 
@@ -56,27 +56,25 @@ function renderCalendar() {
     const monthName = document.querySelector(".month-name");
     const daysContainer = document.querySelector(".days");
 
-    // Clear previous content
+
     monthName.innerHTML = "";
     daysContainer.innerHTML = "";
 
-    // Set month name
+
     monthName.textContent = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
 
-    // Get first day of the month
-    const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
-    const startingDay = firstDayOfMonth.getDay(); // 0 for Sunday, 1 for Monday, etc.
 
-    // Get number of days in the month
+    const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+    const startingDay = firstDayOfMonth.getDay();
+
     const totalDays = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
 
-    // Render empty boxes for days before the start of the month
+
     for (let i = 0; i < startingDay; i++) {
         const dayElement = document.createElement("div");
         daysContainer.appendChild(dayElement);
     }
 
-    // Render days of the month
     for (let i = 1; i <= totalDays; i++) {
         const dayElement = document.createElement("div");
         dayElement.textContent = i;
@@ -84,7 +82,7 @@ function renderCalendar() {
         daysContainer.appendChild(dayElement);
     }
 
-    // Restore selected days from localStorage
+
     restoreSelectedDays();
 }
 
@@ -92,7 +90,7 @@ function selectDay(dayElement, day) {
     const selectedDays = getSelectedDays();
     const currentMonthYear = getCurrentMonthYear();
 
-    // Toggle the selected state
+
     if (selectedDays.includes(day)) {
         selectedDays.splice(selectedDays.indexOf(day), 1);
         dayElement.classList.remove('selected');

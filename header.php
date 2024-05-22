@@ -14,6 +14,7 @@
             <ul>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="memberpage.php">MemberPage</a></li>
+                <li><a href="contact.php">contact</a></li>
                 <li class="logout"><a href="login.php">Logout</a></li>
             </ul>
         </nav>
