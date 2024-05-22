@@ -9,7 +9,7 @@
 <body>
 <header>
     <div class="container">
-        <h1>Voetball</h1>
+        <h1>.</h1>
         <nav>
             <ul>
                 <li><a href="home.php">Home</a></li>
@@ -18,6 +18,9 @@
                 <li class="logout"><a href="login.php">Logout</a></li>
             </ul>
         </nav>
+    </div>
+    <div class="logo">
+    <img src="images/logoo.png" alt="logoo">
     </div>
 </header>
 </body>

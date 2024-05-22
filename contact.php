@@ -9,15 +9,13 @@
 <body>
 <?php include('header.php'); ?>
 
+<div class="footo">
+    <img src="images/contact.png" alt="contact">
+</div>
+
 <div class="custom-container">
     <div class="custom-left-panel">
-        <h2>heeft u vragen? Neem contact op</h2>
-        <p><strong>Ontwerp voor</strong></p>
-        <p>Web</p>
-        <p><strong>Telefoon</strong></p>
-        <p>+31 069036728</p>
-        <p><strong>laat hier je bericht achter</strong></p>
-        <p>dubbellc@outlook.com</p>
+        <h2>Contact us</h2>
     </div>
     <div class="custom-right-panel">
         <form action="mailto:c.cadeau@outlook.com" method="post" enctype="text/plain">
@@ -31,7 +29,7 @@
                 <label for="bericht"></label><textarea id="bericht" name="bericht" rows="4" placeholder="Enter your message" required></textarea>
             </div>
             <div class="custom-form-group">
-                <input type="submit" value="INDIENEN">
+                <input type="submit" value="Submit">
             </div>
         </form>
     </div>

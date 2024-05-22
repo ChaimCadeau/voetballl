@@ -44,8 +44,6 @@ function pad(num) {
 //-----------------------calender-------------------//
 
 
-
-
 const monthNames = ["Januari", "Februari", "Maart", "April", "Mei", "Juni",
     "Juli", "Augustus", "September", "Oktober", "November", "December"
 ];
@@ -56,19 +54,14 @@ function renderCalendar() {
     const monthName = document.querySelector(".month-name");
     const daysContainer = document.querySelector(".days");
 
-
     monthName.innerHTML = "";
     daysContainer.innerHTML = "";
 
-
     monthName.textContent = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
-
 
     const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
     const startingDay = firstDayOfMonth.getDay();
-
     const totalDays = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
-
 
     for (let i = 0; i < startingDay; i++) {
         const dayElement = document.createElement("div");
@@ -82,14 +75,12 @@ function renderCalendar() {
         daysContainer.appendChild(dayElement);
     }
 
-
     restoreSelectedDays();
 }
 
 function selectDay(dayElement, day) {
     const selectedDays = getSelectedDays();
     const currentMonthYear = getCurrentMonthYear();
-
 
     if (selectedDays.includes(day)) {
         selectedDays.splice(selectedDays.indexOf(day), 1);
@@ -99,7 +90,6 @@ function selectDay(dayElement, day) {
         dayElement.classList.add('selected');
     }
 
-    // Save updated selected days to localStorage
     localStorage.setItem(currentMonthYear, JSON.stringify(selectedDays));
 }
 
@@ -118,6 +108,10 @@ function restoreSelectedDays() {
     const daysContainer = document.querySelector(".days");
     const dayElements = daysContainer.children;
 
+    dayElements.forEach(dayElement => {
+        dayElement.classList.remove('selected');
+    });
+
     selectedDays.forEach(day => {
         dayElements[day - 1].classList.add('selected');
     });
@@ -133,11 +127,7 @@ function nextMonth() {
     renderCalendar();
 }
 
-// Initial render
 renderCalendar();
-
-
-
 
 
 
