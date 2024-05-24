@@ -17,6 +17,7 @@
     <div class="custom-left-panel">
         <h2>Contact us</h2>
     </div>
+
     <div class="custom-right-panel">
         <form action="mailto:c.cadeau@outlook.com" method="post" enctype="text/plain">
             <div class="custom-form-group">

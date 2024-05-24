@@ -45,30 +45,28 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login en Register</title>
+    <title>Inloggen en Registreren</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="login">
-    <h1>Login</h1>
+    <h1>Inloggen</h1>
     <form method="POST">
         <label>Email</label>
         <label>
             <input type="email" name="mail" required>
         </label>
-        <label>Password</label>
+        <label>Wachtwoord</label>
         <label>
             <input type="password" name="pass" required>
         </label>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Verzenden">
     </form>
-    <p> Don't have an account? <a href="signup.php">Sign Up here</a></p>
+    <p> Heb je geen account? <a href="signup.php">Registreer hier</a></p>
 </div>
 </body>
 </html>

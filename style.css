@@ -857,6 +857,7 @@ body{
 
 .custom-right-panel {
     padding: 40px;
+    box-shadow: 2px 8px 8px rgba(1, 2, 0, 0.6);
     width: 70%;
     z-index: 3;
 }
